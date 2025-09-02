@@ -1,0 +1,90 @@
+body {
+  background-image: url('https://img.freepik.com/free-vector/gradient-network-connection-background_23-2148874050.jpg?semt=ais_hybrid&w=740&q=80');
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: cover; 
+  background-color: #05234c; 
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+.nav-logo img{
+    height: 40px;
+    width: auto;
+}
+.navbar{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px 20px;
+
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.nav-links{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 10px;
+    display: flex;
+    gap: 20px;
+}
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.nav-links a:hover{
+    text-decoration: underline;
+}
+.about-section {
+    background: rgba(255, 255, 255, 0.15); /* very transparent white */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+    color: white;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 40px auto;
+    font-family: Arial, sans-serif;
+}
+
+.about-section h2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+.about-columns{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    position: relative;
+}
+.about-colum{
+    flex: 1;
+    max-width: 400px;
+    text-align: center;
+}
+.about-colum h3{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.about-colum p{
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.divider{
+    width: 2px;
+    background: white;
+    height: 200px;
+    align-self: center;
+}
