@@ -8,83 +8,158 @@ body {
   margin: 0;
   padding: 20px;
 }
-.nav-logo img{
-    height: 40px;
-    width: auto;
+html{
+    scroll-behavior: smooth;
 }
-.navbar{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 10px 20px;
+.nav-logo img {
+  height: 40px;
+  width: auto;
+}
 
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+.navbar {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px 20px;
+
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-.nav-links{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    padding-top: 10px;
-    display: flex;
-    gap: 20px;
+
+.nav-links {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 10px;
+  display: flex;
+  gap: 20px;
 }
-.nav-links a{
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 1rem;
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
 }
-.nav-links a:hover{
-    text-decoration: underline;
+
+.nav-links a:hover {
+  text-decoration: underline;
 }
+
+/* Make about-section and values-section same vertical size */
+.about-section,
+.values-section {
+  background: rgba(255, 255, 255, 0.15); 
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  color: white;
+  padding: 25px 20px; /* reduced padding to match both */
+  max-width: 600px;
+  font-family: Arial, sans-serif;
+  margin: 0; /* remove extra margins */
+}
+
 .about-section {
-    background: rgba(255, 255, 255, 0.15); /* very transparent white */
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-
-    color: white;
-    padding: 40px 20px;
-    max-width: 900px;
-    margin: 40px auto;
-    font-family: Arial, sans-serif;
+  max-width: 600px;
 }
 
-.about-section h2{
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 40px;
+.values-section {
+  max-width: 400px;
 }
-.about-columns{
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 40px;
-    position: relative;
+
+.about-section h2,
+.values-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 25px;
 }
-.about-colum{
-    flex: 1;
-    max-width: 400px;
-    text-align: center;
+
+.about-columns {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
+  position: relative;
 }
-.about-colum h3{
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 15px;
+
+.about-colum {
+  flex: 1;
+  max-width: 400px;
+  text-align: center;
 }
-.about-colum p{
-    font-size: 1rem;
-    line-height: 1.5;
+
+.about-colum h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
-.divider{
-    width: 2px;
-    background: white;
-    height: 200px;
-    align-self: center;
+
+.about-colum p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.divider {
+  width: 2px;
+  background: white;
+  height: 200px;
+  align-self: center;
+}
+
+.main-content {
+  display: flex;
+  gap: 40px;
+  max-width: 1040px; 
+  margin: 40px auto;
+  align-items: stretch; /* stretch to same height */
+}
+
+.values-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  margin-bottom: 30px;
+}
+
+.value-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.value-number {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #188bce;
+  min-width: 30px;
+  line-height: 1;
+  text-align: right;
+}
+.value-item p {
+  margin-top: 0;       
+  padding-top: 1px;    
+  line-height: 1.3;    
+}
+.pyramid-image {
+  text-align: center;
+}
+
+.pyramid-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.values-content {
+  display: flex;
+  gap: 20px; 
+  align-items: flex-start;
 }
