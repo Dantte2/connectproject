@@ -1,5 +1,5 @@
 body {
-  background-image: url('images/connectbackground.png');
+  background-image: url('images/background.jpg');
   background-repeat: no-repeat;
   background-position: center; 
   background-size: cover; 
@@ -41,7 +41,7 @@ html{
 
 .nav-links a {
   text-decoration: none;
-  color: white;
+  color: rgb(0, 0, 0);
   font-weight: bold;
   font-size: 1rem;
 }
@@ -50,7 +50,6 @@ html{
   text-decoration: underline;
 }
 
-/* Make about-section and values-section same vertical size */
 .about-section,
 .values-section {
   background: rgba(255, 255, 255, 0.15); 
@@ -59,11 +58,11 @@ html{
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 
-  color: white;
-  padding: 25px 20px; /* reduced padding to match both */
+  color: rgb(0, 0, 0);
+  padding: 25px 20px; 
   max-width: 600px;
   font-family: Arial, sans-serif;
-  margin: 0; /* remove extra margins */
+  margin: 0; 
 }
 
 .about-section {
@@ -108,7 +107,7 @@ html{
 
 .divider {
   width: 2px;
-  background: white;
+  background: rgb(0, 0, 0);
   height: 200px;
   align-self: center;
 }
@@ -162,4 +161,87 @@ html{
   display: flex;
   gap: 20px; 
   align-items: flex-start;
+}
+
+.section-events {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 25px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  color: #000;
+}
+
+
+.section-events h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+
+.events-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch; 
+}
+
+.event {
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: #000;
+  flex: 1 1 280px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.event small {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+
+.event-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.event-content h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #222;
+  min-height: 48px;
+}
+
+.event-content p {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.4;
+  flex-grow: 1;
+  margin-bottom: 15px;
+}
+
+.event-links {
+  margin-top: auto;
+}
+
+.event-links a {
+  font-size: 0.9rem;
+  color: #3498db;
+  text-decoration: none;
+}
+
+.event-links a:hover {
+  text-decoration: underline;
+  color: #21618c;
 }
