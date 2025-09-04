@@ -245,6 +245,7 @@ html{
   text-decoration: underline;
   color: #21618c;
 }
+
 .section-contact{
   background: rgba(255, 255, 255, 0.15); 
   backdrop-filter: blur(10px);
@@ -257,6 +258,9 @@ html{
   max-width: 750px;
   font-family: Arial, sans-serif;
   margin: 60 auto; 
+}
+.section-contact h2{
+  text-align: center;
 }
 
 .contacts-container{
@@ -304,6 +308,7 @@ html{
 .contact-person a:hover{
   text-decoration: underline;
 }
+
 .footer{
   position: relative;
   display: flex;
@@ -347,4 +352,24 @@ html{
 .footer-logo img{
   height: 3rem;
   width: auto;
+}
+
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 10px 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  cursor: pointer;
+  display: none;
+  z-index: 1000;
+  transition: background 0.3s ease;
+}
+
+#backToTop:hover {
+  background: rgba(0, 0, 0, 0.8);
 }
