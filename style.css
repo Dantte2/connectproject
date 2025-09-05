@@ -366,3 +366,14 @@ html {
 #backToTop:hover {
   background: rgba(0, 0, 0, 0.8);
 }
+
+body.event-detail-page .event {
+  align-items: center;
+  text-align: left;
+}
+
+body.event-detail-page .navbar{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
