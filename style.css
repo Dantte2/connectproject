@@ -20,7 +20,10 @@ html {
   position: relative;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  flex-wrap: wrap;
+  
+  align-items: center;
+  justify-content: space-between;
   padding: 1rem 2rem;
 
   background: rgba(255, 255, 255, 0.2);
@@ -31,12 +34,12 @@ html {
 }
 
 .nav-links {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   padding-top: 1em;
-  display: flex;
   gap: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  margin-left: -1.5%;
 }
 
 .nav-links a {
@@ -65,7 +68,7 @@ html {
 }
 
 .about-section {
-  max-width: 80rem; 
+  max-width: 40rem; 
 }
 
 .values-section {
@@ -117,6 +120,9 @@ html {
   max-width: 78rem; 
   margin: 4rem auto;
   align-items: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .values-list {
@@ -310,6 +316,7 @@ html {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  flex-wrap: wrap;
   padding: 1rem 2rem;
 
   background: rgba(255, 255, 255, 0.2);
